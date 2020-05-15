@@ -280,7 +280,7 @@ function addArtist(id, name, years, genre, nationality, bio){
 
   }
 
-addArtist(21, "domi", 2000, "web design", "asian", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cupiditate nisi quo, quasi officia explicabo. Odit quod ratione, eius ipsam soluta, perferendis esse error fugiat porro laboriosam earum vitae rem.");
+addArtist((artists.length + 1), "domi", 2000, "web design", "asian", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cupiditate nisi quo, quasi officia explicabo. Odit quod ratione, eius ipsam soluta, perferendis esse error fugiat porro laboriosam earum vitae rem.");
 
 console.log(artists);
 

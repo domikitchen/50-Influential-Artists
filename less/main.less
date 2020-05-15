@@ -1,5 +1,6 @@
 .title-container {
     margin: 0 auto 5% auto;
+    .margins(0, auto, 5%, auto);
     height: 60vh;
     width: 100%;
     background-image: url("../assets/home.png");
@@ -16,7 +17,7 @@
         font-size: 2.5rem;
     }
     button {
-        .btn();
+        .btn(1rem, white);
     }
     @media @mobile {
         height: 35vh;
@@ -28,13 +29,11 @@
 .artists-container {
     width: 100%;
     padding-top: 2%;
-    display: flex;
-    flex-flow: row wrap;
+    .flexflow(row, wrap);
     justify-content: space-around;
     .artist {
         width: 45%;
-        display: flex;
-        flex-direction: column;
+        .flexflow(column, wrap);
         align-items: center;
         a {
             padding: 5% 0;

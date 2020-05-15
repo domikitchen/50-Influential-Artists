@@ -1,0 +1,70 @@
+.title-container {
+    margin: 0 auto 5% auto;
+    .margins(0, auto, 5%, auto);
+    height: 60vh;
+    width: 100%;
+    background-image: url("../assets/home.png");
+    background-position: center;
+    .contentcenter();
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    h1 {
+        margin-bottom: 1%;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    button {
+        .btn(1rem, white);
+    }
+    @media @mobile {
+        height: 35vh;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+}
+.artists-container {
+    width: 100%;
+    padding-top: 2%;
+    .flexflow(row, wrap);
+    justify-content: space-around;
+    .artist {
+        width: 45%;
+        .flexflow(column, wrap);
+        align-items: center;
+        a {
+            padding: 5% 0;
+            text-align: center;
+            text-decoration: none;
+            color: @almostBlack;
+            font-size: 1.3rem;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            border-radius: 10px;
+            width: 80%;
+        }
+        .bio {
+            text-align: center;
+        }
+    }
+    @media @mobile {
+        flex-direction: column;
+        align-content: center;
+        .artist {
+            width: 60%;
+            img {
+                width: 70%;
+            }
+        }
+        .bio {
+            font-size: .8rem;
+            margin-bottom: 10%;
+        }
+    }
+}

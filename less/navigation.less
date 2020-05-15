@@ -1,0 +1,29 @@
+header {
+    width: 100%;
+    .margins(3%, 0, 3%, 0);
+    .contentcenter();
+    letter-spacing: 1px;
+    line-height: 80%;
+    color: @almostBlack;
+    nav {
+        .contentcenter();
+        width: 50%;
+        .current {
+            font-weight: bold;
+        }
+        a {
+            .contentcenter();
+            text-decoration: none;
+            padding: .5% 15px;
+            color: @almostBlack;
+        }
+        #about {
+            border-left: 1px solid @almostBlack;
+            border-right: 1px solid @almostBlack;
+        }
+    }
+    @media @mobile {
+        margin: 5% 0;
+        line-height: 80%;
+    }
+}

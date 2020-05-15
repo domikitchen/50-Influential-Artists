@@ -128,7 +128,7 @@ header nav #about {
 .title-container {
   margin: 0 auto 5% auto;
   height: 60vh;
-  width: 90%;
+  width: 100%;
   background-image: url("../assets/home.png");
   background-position: center;
   display: flex;
@@ -195,7 +195,11 @@ header nav #about {
   .artists-container .artist {
     width: 60%;
   }
+  .artists-container .artist img {
+    width: 70%;
+  }
   .artists-container .bio {
-    font-size: 0.5rem;
+    font-size: 0.8rem;
+    margin-bottom: 10%;
   }
 }

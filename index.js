@@ -276,14 +276,13 @@ nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
 function addArtist(id, name, years, genre, nationality, bio){
-
-    
+  artists.push({id: id, name: name, years: years, genre: genre, nationality: nationality, bio: bio})
 
   }
 
 addArtist(21, "domi", 2000, "web design", "asian", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cupiditate nisi quo, quasi officia explicabo. Odit quod ratione, eius ipsam soluta, perferendis esse error fugiat porro laboriosam earum vitae rem.");
 
-
+console.log(artists);
 
 // 🎨🎨 STRETCH 🎨🎨//
 
